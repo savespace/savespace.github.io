@@ -20,78 +20,56 @@
 			</ul>
 		</div>
 	</header>
-
-	<!-- KARUZELA -->
-
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
-	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	  </ol>
-
-	  <div class="carousel-inner" role="listbox">
-	    <div class="item active">
-	      <img src="https://static.pexels.com/photos/206779/pexels-photo-206779.jpeg" alt="image 1" class="img-responsive">
-	      <div class="carousel-caption">
-	        <h1>Przykładowy tekst</h1>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus urna. Nullam quis euismod nunc. Praesent sed turpis ac eros lacinia pretium non eget mi.</p>
-	      </div>
-	    </div>
-	    <div class="item">
-	      <img src="https://static.pexels.com/photos/206779/pexels-photo-206779.jpeg" alt="image 2" class="img-responsive">
-	      <div class="carousel-caption">
-	        <h1>Przykładowy tekst</h1>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut lectus urna. Nullam quis euismod nunc. Praesent sed turpis ac eros lacinia pretium non eget mi.</p>
-	      </div>
-	    </div>
-	  </div>
-
-	  <!-- Controls -->
-	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-	</div>
-
-	<!-- /KARUZELA -->
+	<!-- hero -->
+	<section class="hero">
+		<div class="container">
+			<h1>Krzysztof Zielonka</h1>
+			<p>Junior Front-end Developer</p>
+		</div>
+	</section>
 
 	<!-- NAWIGACJA STICKY -->
 
 	<nav id="sticker">
 		<div class="navi">
 			<div class="navi-container container">
+				<span style="font-size:40px;cursor:pointer;color:#fff" onclick="openNav()">&#9776;</span>
 				<i class="fa fa-github-square" aria-hidden="true"></i>
 				<i class="fa fa-facebook-official" aria-hidden="true"></i>
 					<ul class="nav_list">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Contact me</a></li>
+						<li><a href="#">O mnie</a></li>
+						<li><a href="#">Co potrafię ?</a></li>
+						<li><a href="#">Moje prace</a></li>
+						<li><a href="#">Kontakt</a></li>
 					</ul>
 			</div>
 		</div>
 	</nav>
 
 	<!-- /NAWIGACJA -->
+
+	<!-- SIDE NAV -->
+	<section class="side-nav">
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">O mnie</a>
+		  <a href="#">Co potrafię ?</a>
+		  <a href="#">Moje prace</a>
+		  <a href="#">Kontakt</a>
+		</div>
+	</section>
 	<section class="home container">
-		<div class="github col-4">
+		<div class="github col-4 col-m-12">
 			<i class="fa fa-html5" aria-hidden="true"></i>
 			<h1>HTML</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius metus ut mauris aliquam, molestie volutpat sem faucibus. Curabitur lacinia nisl elit, vel elementum erat ornare eu.</p>
 		</div>
-		<div class="linkedin col-4">
+		<div class="linkedin col-4 col-m-12">
 			<i class="fa fa-css3" aria-hidden="true"></i>
 			<h1>CSS</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius metus ut mauris aliquam, molestie volutpat sem faucibus. Curabitur lacinia nisl elit, vel elementum erat ornare eu.</p>
 		</div>
-		<div class="rwd col-4">
+		<div class="rwd col-4 col-m-12">
 			<i class="fa fa-mobile" aria-hidden="true"></i>
 			<h1>RWD</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius metus ut mauris aliquam, molestie volutpat sem faucibus. Curabitur lacinia nisl elit, vel elementum erat ornare eu.</p>
@@ -100,9 +78,11 @@
 			
 	</section>
 
+
+
 	<section class="about">
-		<div class="photo"></div>
-		<div class="information">
+		<div class="photo col-m-12"></div>
+		<div class="information col-m-12">
 			<div class="info col-9">
 				<h1>About me</h1>
 				<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.</p>
@@ -168,17 +148,17 @@
 	</section>
 	<footer class="footer">
 		<div class="container">
-			<div class="col-4 footer-title location">
+			<div class="col-4 col-m-4 footer-title location">
 				<h1>Napisz do mnie</h1>
 				<p>savespace@outlook.com</p>
 				<p>lub</p>
 				<p>+48 000 555 555</p>
 			</div>
-			<div class="col-4 footer-title location">
+			<div class="col-4 col-m-4 footer-title location">
 				<h1>Znajdziesz mnie na</h1>
 				
 			</div>
-			<div class="col-4 footer-title location">
+			<div class="col-4 col-m-4 footer-title location">
 				<h1>Aktualne projekty</h1>
 				<ul class="new-project">
 					<li>Nazwa projektu (1)</li>

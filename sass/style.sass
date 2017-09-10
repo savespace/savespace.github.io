@@ -16,17 +16,6 @@
 
 body h1
 	font-family: 'Anton'
-// KARUZELA
-.carousel-inner
-	height: 55vh
-.carousel-caption h1
-	font-size: 60px
-	text-transform: uppercase
-	color: #fff
-
-.carousel-caption p
-		margin-bottom: 22em
-		font-size: 30px
 
 // GÓRNA NAWIGACJA
 header
@@ -34,9 +23,8 @@ header
 	height: 30px
 	position: relative
 	margin: 0
-	z-index: 9999
+	z-index: 2
 	box-shadow: 0 1px 5px #000
-
 	.contact-me
 		color: #fff
 		padding-top: 5px
@@ -53,6 +41,32 @@ header
 				a
 					color: #fff
 					text-decoration: none
+//	HERO
+
+.hero
+	background: url("https://static.pexels.com/photos/418296/pexels-photo-418296.jpeg")
+	height: 750px
+	width: 100%
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	display: block
+	padding: 0
+
+	h1
+		text-align: center
+		color: #fff
+		text-transfrom: uppercase
+		font-size: 80px
+		padding-top: 250px
+		text-shadow: 2px 2px 4px #000000
+
+	p
+		text-align: center
+		font-size: 40px
+		color: #fff
+
+
 
 // DOLNA NAWIGACJA
 
@@ -68,6 +82,8 @@ header
 	&:hover
 		color: #0174B5
 		cursor: pointer
+	span:hover
+		color: #0174B5
 
 .nav_list
 	margin: 0
@@ -88,10 +104,46 @@ header
 			&:hover
 				background-color: #0174B5
 				transition: 0.3s
-.separator
-	height: 100vh
+
+// SIDE NAV
+.sidenav
+	display: none
+	height: 100%
+	width: 250px
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	background-color: #111
+	overflow-x: hidden
+	padding-top: 60px
+	z-index: 2
+
+	a
+		padding: 8px 8px 8px 32px
+		text-decoration: none
+		font-size: 25px
+		color: #818181
+		display: block
+		transition: 0.3s
+		&:hover
+			color: #f1f1f1
+	.closebtn
+		position: absolute
+		top: 0
+		right: 25px
+		font-size: 36px
+		margin-left: 50px
+
+@media screen and (max-height: 450px)
+	.sidenav
+		padding-top: 15px
+
+		a
+			font-size: 18px
 
 // HOME
+
 
 .home 
 	text-align: center
@@ -130,7 +182,6 @@ header
 		font-style: bold
 		margin-bottom: 40px
 	p
-		width: 670px
 		font-size: 18px
 		font-weight: 400
 		color: #191919
@@ -229,4 +280,68 @@ footer
 		line-height: 94px
 		margin: 0 auto
 
+
+// MOBILE
+
+@media (max-width: 850px)
+	.col-m-1 
+		width: 8.33%
+	.col-m-2
+		width: 16.66%
+	.col-m-3
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6
+		width: 50%
+	.col-m-7 
+		width: 58.33%
+	.col-m-8 
+		width: 66.66%
+	.col-m-9 
+		width: 75%
+	.col-m-10 
+		width: 83.33%
+	.col-m-11
+		width: 91.66%
+	.col-m-12 
+		width: 100%
+	        
+	.col-m-offset-0 
+		margin-left: 0
+	.col-m-offset-1 
+		margin-left: 8.33%
+	.col-m-offset-2 
+		margin-left: 16.66%
+	.col-m-offset-3 
+		margin-left: 25%
+	.col-m-offset-4 
+		margin-left: 33.33%
+	.col-m-offset-5 
+		margin-left: 41.66%
+	.col-m-offset-6 
+		margin-left: 50%
+	.col-m-offset-7 
+		margin-left: 58.33%
+	.col-m-ffset-8 
+		margin-left: 66.66%
+	.col-m-offset-9 
+		margin-left: 75%
+	.col-m-offset-10 
+		margin-left: 83.33%
+	.col-m-offset-11 
+		margin-left: 91.66%
+
+	.nav_list
+		display: none
+	.navi-container span
+		float: right
+	.information
+		height: 550px
+	.footer
+		display: none
+	.top-header
+		display: none
 
