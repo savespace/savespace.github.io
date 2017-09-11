@@ -18,6 +18,7 @@ body h1
 	font-family: 'Anton'
 
 // GÓRNA NAWIGACJA
+
 header
 	background-color: #0174B5
 	height: 30px
@@ -58,15 +59,29 @@ header
 		color: #fff
 		text-transfrom: uppercase
 		font-size: 80px
-		padding-top: 250px
+		margin-top: 250px
+		padding-top: 10px
+		padding-bottom: 10px
+		border-top: 1px solid #fff
+		border-bottom: 1px solid #fff
+		border-width: 2px
 		text-shadow: 2px 2px 4px #000000
+
 
 	p
 		text-align: center
 		font-size: 40px
 		color: #fff
 
-
+	@keyframes example
+		from
+			opacity: 1
+		to
+			opacity: 0
+	span
+		animation-name: example
+		animation-duration: 1.3s
+		animation-iteration-count: infinite
 
 // DOLNA NAWIGACJA
 
@@ -135,24 +150,36 @@ header
 		font-size: 36px
 		margin-left: 50px
 
-@media screen and (max-height: 450px)
-	.sidenav
-		padding-top: 15px
+	@media screen and (max-height: 450px)
+		.sidenav
+			padding-top: 15px
 
-		a
-			font-size: 18px
+			a
+				font-size: 18px
 
 // HOME
 
 
 .home 
 	text-align: center
-	margin: 5vh 0
+	margin: 10vh 0
 	i
 		font-size: 120px
-		&:hover
-			color: #0174B5
-			cursor: pointer
+	.github:hover
+		color: #0174B5
+		cursor: pointer
+		p
+			color: #000
+	.linkedin:hover
+		color: #0174B5
+		cursor: pointer
+		p
+			color: #000
+	.rwd:hover
+		color: #0174B5
+		cursor: pointer
+		p
+			color: #000
 
 // ABOUT ME
 
@@ -302,7 +329,7 @@ footer
 		width: 66.66%
 	.col-m-9 
 		width: 75%
-	.col-m-10 
+	.col-m-10
 		width: 83.33%
 	.col-m-11
 		width: 91.66%

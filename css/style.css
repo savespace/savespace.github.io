@@ -52,12 +52,26 @@ header {
     color: #fff;
     text-transfrom: uppercase;
     font-size: 80px;
-    padding-top: 250px;
+    margin-top: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-width: 2px;
     text-shadow: 2px 2px 4px #000000; }
   .hero p {
     text-align: center;
     font-size: 40px;
     color: #fff; }
+@keyframes example {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+  .hero span {
+    animation-name: example;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite; }
 
 .navi {
   background: #1E4167;
@@ -120,20 +134,32 @@ header {
     right: 25px;
     font-size: 36px;
     margin-left: 50px; }
+  @media screen and (max-height: 450px) {
+    .sidenav .sidenav {
+      padding-top: 15px; }
+      .sidenav .sidenav a {
+        font-size: 18px; } }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
-    .sidenav a {
-      font-size: 18px; } }
 .home {
   text-align: center;
-  margin: 5vh 0; }
+  margin: 10vh 0; }
   .home i {
     font-size: 120px; }
-    .home i:hover {
-      color: #0174B5;
-      cursor: pointer; }
+  .home .github:hover {
+    color: #0174B5;
+    cursor: pointer; }
+    .home .github:hover p {
+      color: #000; }
+  .home .linkedin:hover {
+    color: #0174B5;
+    cursor: pointer; }
+    .home .linkedin:hover p {
+      color: #000; }
+  .home .rwd:hover {
+    color: #0174B5;
+    cursor: pointer; }
+    .home .rwd:hover p {
+      color: #000; }
 
 .photo {
   width: 20%;
