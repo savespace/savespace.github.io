@@ -11,15 +11,6 @@
 	</head>
 	<body>
 	<!-- TOP HEADER -->
-
-	<header class="top-header">
-		<div class="contact-me delay container">
-			<ul class="list-contact">
-				<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:savespace@outlook.com">savespace@outlook.com</a></li>	
-				<li><i class="fa fa-phone" aria-hidden="true"></i>+48 234 242 512</li>
-			</ul>
-		</div>
-	</header>
 	<!-- hero -->
 	<section class="hero">
 		<div class="container">
@@ -33,9 +24,10 @@
 	<nav id="sticker">
 		<div class="navi">
 			<div class="navi-container container">
-				<span style="font-size:40px;cursor:pointer;color:#fff" onclick="openNav()">&#9776;</span>
-				<i class="fa fa-github-square" aria-hidden="true"></i>
-				<i class="fa fa-facebook-official" aria-hidden="true"></i>
+				<span class="scky" style="font-size:40px;cursor:pointer;color:#fff" onclick="openNav()">&#9776;</span>
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<i class="fa fa-phone" aria-hidden="true"></i>
+
 					<ul class="nav_list">
 						<li><a href="#">O mnie</a></li>
 						<li><a href="#">Co potrafię ?</a></li>
@@ -82,7 +74,7 @@
 			
 	</section>
 
-
+	<!-- O MNIE -->
 
 	<section class="about">
 		<div class="photo col-m-12"></div>
@@ -95,59 +87,91 @@
 			</div>
 		</div>
 	</section>
-	<section class="skill container">
-		<div class="skills">
-			<h1>Umiejętności</h1>
-		</div>
-		<button class="accordion"><img src="images/html5.png"><h3>HTML</h3></button>
-		<div class="panel">
-		  <p>Lorem ipsum...</p>
-		</div>
-
-		<button class="accordion"><img src="images/css3.png"><h3>CSS + SASS/LESS</h3></button>
-		<div class="panel">
-		  <p>Lorem ipsum...</p>
-		</div>
-
-		<button class="accordion"><img src="images/bootstrap.png"><h3>Bootstrap</h3></button>
-		<div class="panel">
-		  <p>Lorem ipsum...</p>
-		</div>
-
-		<button class="accordion"><img src="images/rwd.png"><h3>RWD</h3></button>
-		<div class="panel">
-		  <p>Lorem ipsum...</p>
-		</div>
-
-		<button class="accordion"><img src="images/js.png"><h3>Javascript</h3></button>
-		<div class="panel">
-			<p id="demo"></p>
-		</div>
-
-		<button class="accordion"><img src="images/jquery.png"><h3>jQuery</h3></button>
-		<div class="panel">
-		  <p>Lorem ipsum...</p>
-		</div>
-
-		<button class="accordion"><img src="images/grunt.png"><h3>Grunt</h3></button>
-		<div class="panel">
-		  <p>Lorem ipsum...</p>
-		</div>
-
-		<button class="accordion"><img src="images/git.png"><h3>Git</h3></button>
-		<div class="panel">
-		  <p>Lorem ipsum...</p>
+	<!-- SKILL -->
+	<section id="section-skill" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="heading-title">Co potrafię ?</h2>
+				</div>
+				<div class="col-6 col-m-12">
+					<div class="prog-head">
+						<h4>HTML / CSS</h4>
+					</div>
+					<div class="prog striped animated blue">
+					  <div class="progBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+					    <span class="srOnly">90 %</span>
+					  </div>
+					</div>
+					<div class="prog-head">
+						<h4>SASS / LESS</h4>
+					</div>
+					<div class="prog striped animated blue">
+					  <div class="progBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+					    <span class="srOnly">85%</span>
+					  </div>
+					</div>
+					<div class="prog-head">
+						<h4>JavaScript (Podstawowy)</h4>
+					</div>
+					<div class="prog striped animated blue">
+					  <div class="progBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+					    <span class="srOnly">50%</span>
+					  </div>
+					</div>
+					<div class="prog-head">
+						<h4>jQuery</h4>
+					</div>
+					<div class="prog striped animated blue">
+					  <div class="progBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+					    <span class="srOnly">55%</span>
+					  </div>
+					</div>
+				</div>
+				<div class="col-6 col-m-12">
+					<div class="prog-head">
+						<h4>RWD</h4>
+					</div>
+					<div class="prog striped animated blue">
+					  <div class="progBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					    <span class="srOnly">100%</span>
+					  </div>
+					</div>
+					<div class="prog-head">
+						<h4>Git</h4>
+					</div>
+					<div class="prog striped animated blue">
+					  <div class="progBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+					    <span class="srOnly">70%</span>
+					  </div>
+					</div>
+					<div class="prog-head">
+						<h4>Grunt</h4>
+					</div>
+					<div class="prog striped animated blue">
+					  <div class="progBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+					    <span class="srOnly">70%</span>
+					  </div>
+					</div>
+					<div class="prog-head">
+						<h4>Photoshop / AvoCode</h4>
+					</div>
+					<div class="prog striped animated blue">
+					  <div class="progBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+					    <span class="srOnly">65%</span>
+					  </div>
+					</div>
+				</div>
+	</section>
+	<section class="quot">
+		<div class="title-quot col-12 col-m-12">
+			<p>”Zawsze pisz kod tak, jakby gość, który ma się nim zajmować był agresywnym psychopatą, który wie, gdzie mieszkasz”.</p>
+			<h3>Martin Golding</h3>
 		</div>
 	</section>
-	<section class="portfolio">
-		<div class="port-head">
-			<h1>Moje projekty</h1>
-		</div>
-		<div class="port-content">
-			<div class="port-image col-6">
-				<h1>Najnowszy projekt</h1>
-				<img src="">
-			</div>
+	<section class="work">
+		<div class="title-work col-12">
+			<h1>Moje prace</h1>
 		</div>
 	</section>
 	<footer class="footer">
