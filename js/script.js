@@ -1,3 +1,11 @@
+// SCROLL
+$(document).on('click', 'a', function(event){
+      event.preventDefault();
+      $('body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+      }, 800);
+  });
+
 // ŚLEDZENIE
 window.smartlook||(function(d) {
 var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
