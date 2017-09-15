@@ -182,7 +182,7 @@ section .container {
       transition: 0.4s; }
     .scroller .scroll:hover::after {
       top: 25px; }
-
+      
 #about {
   text-align: center;
   color: #3c3c3c;
