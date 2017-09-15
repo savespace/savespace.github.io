@@ -31,6 +31,10 @@ section .container
 	-ms-transform:      translate($posX, $posY)
 	-webkit-transform:  translate($posX, $posY)
 	transform:          translate($posX, $posY)
+=transition($transition)
+	-webkit-transition: $transition
+	-moz-transition:    $transition
+	transition:         $transition
 
 .bordered
 	position: relative
@@ -147,12 +151,43 @@ section .container
 			font-size: 15px
 			font-style: regular
 
+.scroller
+	position: absolute
+	bottom: 30px
+	left: 50%
+	+translate(-50%, 0)
+
+	.scroll
+		display: block
+		width: 26px
+		height: 40px
+		border: 2px solid #fff
+		border-radius: 13px
+		position: relative
+		&.scroll-dark
+			border-color: #000
+			&::after
+				background: #000
+		&::after
+			content: ""
+			position: absolute
+			width: 6px
+			height: 6px
+			background: #fff
+			top: 6px
+			left: calc(40%)
+			border-radius: 50px
+			+transition(.4s)
+		&:hover
+			&::after
+				top: 25px
+
 // SEKCJA ABOUT US //
 
-.about
+#about
 	text-align: center
 	color: #3c3c3c
-	margin: 120px 0 120px 0
+	padding: 10vh 0 8vh 0
 
 	h1
 		font-size: 34px
