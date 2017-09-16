@@ -350,7 +350,7 @@ footer > .container {
   .con h1 {
     font-size: 28px; } }
 
-@media (max-width: 335px) {
+@media (max-width: 365px) {
   h1 {
     font-size: 25px; }
   .hero {
